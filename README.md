@@ -12,7 +12,7 @@ Using Vagrant can be really easy. This repository will help you to create a virt
 ##How to use
 
 	$ git clone https://github.com/GeekyTheory/Vagrant-LAMP.git
-	$ cd vagrant-lamp
+	$ cd Vagrant-LAMP
 	$ vagrant up
 
 ####Access to Apache server: 
