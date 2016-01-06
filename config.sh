@@ -1,3 +1,4 @@
+
 #!/bin/bash
 ##########
 ### Created by Mario Pérez <mario@geekytheory.com>
@@ -23,5 +24,8 @@ echo 'phpmyadmin phpmyadmin/mysql/admin-pass password root' | debconf-set-select
 echo 'phpmyadmin phpmyadmin/mysql/app-pass password root' | debconf-set-selections
 echo 'phpmyadmin phpmyadmin/reconfigure-webserver multiselect apache2' | debconf-set-selections
 apt-get install phpmyadmin -y
+# Install Composer
+curl -sS https://getcomposer.org/installer | php
+mv composer.phar /usr/local/bin/composer
 # Restart Apache service
 service apache2 restart
